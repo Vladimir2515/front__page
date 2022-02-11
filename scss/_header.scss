@@ -1,0 +1,98 @@
+.header {
+    background: url("../img/header-bg.png") no-repeat;
+    height: 1080px;
+    .header__container {
+        display: flex;
+        position: relative;
+        .header__cart {
+            top: 50%;
+            left: 60%;
+            position: absolute;
+            background: url("../img/red-bl.png") no-repeat;
+            width: 560px;
+            height: 1554px;
+            z-index: 1;
+            ul {
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 50px;
+                color: #ffffff;
+                width: 50%;
+                margin: 70px auto;
+                li {
+                    margin: 0px 0px 20px 0px;
+                }
+            }
+        }
+        .header__cart::after {
+            content: "";
+            position: absolute;
+            right: -30%;
+            top: -5%;
+            width: 498px;
+            height: 216px;
+            background: url("../img/discount.png") no-repeat;
+        }
+        .header__content {
+            flex: 1 1 auto;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            .header__body {
+                max-width: 1058px;
+                margin: 100px 0px 0px 0px;
+                .header__title {
+                    font-size: 96px;
+                    line-height: 108 / 96 * 100%;
+                    color: #394491;
+                    margin: 0px 0px 60px 0px;
+                }
+                .header__text {
+                    font-size: 32px;
+                    line-height: 140%;
+                    margin: 0px 0px 143px 0px;
+                }
+                .header__consult-btn {
+                    margin: 0px 60px 0px 0px;
+                }
+                .header__hire-btn {
+                    background: #d40e49;
+                }
+                .header__social {
+                    margin: 102px 0px 0px 0px;
+                    .social__item {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0px 84px 0px 0px;
+                    }
+                }
+            }
+            .header__info-block {
+                margin: 40px 0px 0px 0px;
+                .header__list {
+                    .header__list-item {
+                        list-style: none;
+                        position: relative;
+                        margin: 0px 0px 10px 0px;
+                        text-align: right;
+                        &:nth-child(2)::before {
+                            content: "";
+                            position: absolute;
+                            top: 5px;
+                            left: 5px;
+                            width: 20px;
+                            height: 20px;
+                            background: url("../img/social/list-item.png") no-repeat;
+                        }
+                        .header__link {
+                            margin: 0px 0px 0px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+	.details {
+		margin: 134px 0px 0px 0px;
+		min-height: 130px;
+		.details__container {
+			.details__content {
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+				justify-content: space-between;
+				text-align: center;
+
+				.details__img-cover {
+					width: 45%;
+				}
+				.details__social {
+					width: 25%;
+					.social__item {
+						margin: 0px 40px 0px 40px;
+					}
+				}
+				.details__column {
+					width: 30%;
+				}
+			}
+		}
+	}
+}
