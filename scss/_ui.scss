@@ -1,89 +1,96 @@
 /*Общие стили */
-
-.container {
-	max-width: 1594px;
-	margin: 0 auto;
+.wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template: minmax(800px, 1080px) 1fr minmax(190px, auto) / minmax(260px, auto);
+	grid-template-areas: "header" "main" "footer";
 }
-
-/*Стили для текста и h*/
+.flex {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/*Стили для текста, h и списка*/
 .title {
 	font-weight: bold;
-	font-size: 64px;
-	line-height: 72 / 64 * 100%;
+	font-size: 24px;
+	line-height: 120%;
 	color: #394491;
 }
 .sub-title {
 	font-weight: bold;
-	font-size: 36px;
-	line-height: 170%;
+	font-size: 18px;
+	line-height: 120%;
 	color: #394491;
 }
 .text {
 	font-weight: normal;
-	color: #394491;
-	font-size: 24px;
+	font-size: 16px;
 	line-height: 170%;
+	color: #483eb4;
+}
+.social {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 36px;
+	height: 34px;
 }
 /*Стили для кнопки*/
 .btn {
-	display: inline-block;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #ffff;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 27.3469px;
 	line-height: 170%;
-	padding: 5px 40px 15px;
+	padding: 8px 40px 10px;
 	background: #394491;
+	&:hover {
+		background-color: #002fed;
+	}
 }
-.contacts__form-btn {
-	width: 40%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #d40e49;
-	margin: 50px auto;
-	padding: 5px 40px 15px;
+@media (min-width: 1560px) {
+	.btn {
+		font-size: 36px;
+		padding: 8px 40px 10px;
+		background: #394491;
+		&:hover {
+			background-color: #002fed;
+		}
+	}
 }
-
-.social {
-	display: flex;
-	justify-content: left;
-	align-items: center;
+@media (min-width: 925px) and (max-width: 1560px) {
+	.btn {
+		font-size: 20px;
+		padding: 8px 40px 10px;
+		background: #394491;
+		&:hover {
+			background-color: #002fed;
+		}
+	}
 }
-
-.list {
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 140%;
-	color: #ffffff;
+@media (min-width: 925px) {
+	.title {
+		font-size: 64px;
+		line-height: 72 / 64 * 100%;
+	}
+	.sub-title {
+		font-size: 36px;
+		line-height: 170%;
+	}
+	.text {
+		font-size: 24px;
+		line-height: 150%;
+	}
+	.social {
+		font-size: 39px;
+	}
 }
-
-/*Слайдер*/
-.departments__slider {
-	min-height: 1000px;
-}
-.departments__slider .swiper-button-prev {
-	top: 95%;
-	left: 38%;
-	width: 130px;
-	height: 30px;
-}
-.departments__slider .swiper-button-next {
-	top: 95%;
-	right: 45%;
-	width: 130px;
-	height: 30px;
-}
-.departments__slider .swiper-button-next::after {
-	font-size: 0;
-	background: url("../img/slider/right-btn.png") no-repeat;
-	width: 100%;
-	height: 100%;
-}
-.departments__slider .swiper-button-prev::after {
-	font-size: 0;
-	width: 100%;
-	height: 100%;
-	background: url("../img/slider/left-btn.png") no-repeat;
+@media (max-width: 375px) {
+	.btn {
+		font-size: 20px;
+	}
 }

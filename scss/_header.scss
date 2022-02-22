@@ -1,98 +1,225 @@
 .header {
-    background: url("../img/header-bg.png") no-repeat;
-    height: 1080px;
-    .header__container {
-        display: flex;
-        position: relative;
-        .header__cart {
-            top: 50%;
-            left: 60%;
+    grid-area: header;
+    background: url("../img/header/mobile/bg-mobile.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 15px 15px 0px 15px;
+    display: grid;
+    grid-template: auto / 1fr minmax(auto, 1660px) 1fr;
+    .header__contacts {
+        justify-self: end;
+        grid-column: 2 / 3;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+        color: #394491;
+        max-height: 100px;
+        .header__link {
+            margin: 0px 0px 0px 10px;
+            color: #394491;
+            .header__icn {
+                display: none;
+            }
+        }
+        .header__link-desc {
+            margin: 0px 0px 0px 10px;
+            color: #394491;
+            display: none;
+        }
+        .header__social-desctop {
+            display: none;
+        }
+    }
+    .header__title {
+        grid-column: 2 / 3;
+        font-size: 48px;
+        line-height: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    .header__text {
+        grid-column: 2 / 3;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 0px 0px 60px 0px;
+        color: #1a2680;
+        width: 85%;
+        span {
+            display: none;
+        }
+    }
+    .header__btn-box {
+        grid-column: 2 / 3;
+        justify-self: start;
+        margin: 0px 0px 50px 0px;
+        .header__consult-btn {
+            margin: 0px 0px 20px 0px;
+        }
+        .header__hire-btn {
+            background: #d40e49;
+            &:hover {
+                background: #661c32;
+            }
+        }
+    }
+    .header__red-cart-desc {
+        display: none;
+    }
+    .header__red-cart {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: minmax(auto, 75%) minmax(auto, 20%);
+        z-index: 1;
+        .header__nav {
+            position: relative;
+            font-size: 23px;
+            line-height: 110%;
+            color: #ffffff;
+            z-index: 1;
+            background: rgba(213, 14, 73, 0.6);
+            background-blend-mode: darken;
+            li {
+                padding: 20px 0px 10px 20px;
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .header__social {
+            margin: 60px 0px 0px 0px;
+            .social__item {
+                margin: 0px 0px 40px 0px;
+                color: #394491;
+            }
+        }
+    }
+    .header__nav::after {
+        content: "";
+        position: absolute;
+        right: -40%;
+        top: -5%;
+        min-width: 120px;
+        width: 70%;
+        min-height: 20%;
+        background: url("../img/header/mobile/discount-mobile.png") no-repeat;
+    }
+}
+
+@media (min-width: 1560px) {
+    .header {
+        .header__red-cart-desc {
+            display: block;
+            top: 37%;
+            left: 61.6%;
             position: absolute;
             background: url("../img/red-bl.png") no-repeat;
-            width: 560px;
+            background-size: 100% 100%;
+            width: 30%;
             height: 1554px;
             z-index: 1;
-            ul {
+            .header__nav {
                 font-family: Helvetica;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 36px;
                 line-height: 50px;
                 color: #ffffff;
-                width: 50%;
-                margin: 70px auto;
+                width: 55%;
+                margin: 75px 0px 0px 92px;
                 li {
                     margin: 0px 0px 20px 0px;
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .header__nav::after {
+                display: none;
+            }
+            .header__img-box {
+                margin: 343px 0px 0px 80px;
+                .header__img-cover {
+                    width: 380px;
+                    height: 120px;
+                    margin: 0px 0px 40px 0px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
-        .header__cart::after {
+
+        .header__red-cart-desc::after {
             content: "";
             position: absolute;
-            right: -30%;
-            top: -5%;
-            width: 498px;
+            right: -25%;
+            top: -5.5%;
+            width: 490px;
             height: 216px;
-            background: url("../img/discount.png") no-repeat;
+            background: url("../img/header/desc/discount.png") no-repeat;
         }
-        .header__content {
-            flex: 1 1 auto;
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-between;
-            .header__body {
-                max-width: 1058px;
-                margin: 100px 0px 0px 0px;
-                .header__title {
-                    font-size: 96px;
-                    line-height: 108 / 96 * 100%;
-                    color: #394491;
-                    margin: 0px 0px 60px 0px;
-                }
-                .header__text {
-                    font-size: 32px;
-                    line-height: 140%;
-                    margin: 0px 0px 143px 0px;
-                }
-                .header__consult-btn {
-                    margin: 0px 60px 0px 0px;
-                }
-                .header__hire-btn {
-                    background: #d40e49;
-                }
-                .header__social {
-                    margin: 102px 0px 0px 0px;
-                    .social__item {
-                        width: 60px;
-                        height: 60px;
-                        margin: 0px 84px 0px 0px;
-                    }
+    }
+}
+@media (min-width: 925px) {
+    .header {
+        background: url("../img/header/desc/bg-desctop.png") no-repeat;
+        background-size: 100% 100%;
+        grid-template: 8% 27% 25.5% 100px / 1fr minmax(auto, 1660px) 1fr;
+
+        .header__contacts {
+            color: #ffff;
+            font-size: 24px;
+            margin: 35px 0px 0px 0px;
+            .header__link {
+                margin: 0px 0px 10px 10px;
+                color: #ffff;
+                display: block;
+                .header__icn {
+                    display: inline-block;
+                    margin: 0px 30px 0px 0px;
                 }
             }
-            .header__info-block {
-                margin: 40px 0px 0px 0px;
-                .header__list {
-                    .header__list-item {
-                        list-style: none;
-                        position: relative;
-                        margin: 0px 0px 10px 0px;
-                        text-align: right;
-                        &:nth-child(2)::before {
-                            content: "";
-                            position: absolute;
-                            top: 5px;
-                            left: 5px;
-                            width: 20px;
-                            height: 20px;
-                            background: url("../img/social/list-item.png") no-repeat;
-                        }
-                        .header__link {
-                            margin: 0px 0px 0px 30px;
-                        }
-                    }
+            .header__link-desc {
+                margin: 0px 0px 20px 10px;
+                color: #ffff;
+                display: block;
+                .header__icn {
+                    display: inline-block;
+                    margin: 0px 30px 0px 0px;
                 }
             }
+            .header__social-desctop {
+                display: block;
+                margin: 0px 57px 0px 0px;
+                .social__item {
+                    margin: 0px 35px 0px 0px;
+                }
+            }
+        }
+        .header__title {
+            font-size: 96px;
+            line-height: 108px;
+            margin: 0px 0px 0px 0px;
+            align-self: flex-start;
+        }
+        .header__text {
+            width: 50%;
+            font-size: 32px;
+            margin: 0px 0px 0px 0px;
+            align-self: flex-start;
+            span {
+                display: inline;
+            }
+        }
+        .header__btn-box {
+            margin: 0px 0px 0px 0px;
+            .header__consult-btn {
+                display: block;
+                margin: 0px 60px 20px 0px;
+                float: left;
+            }
+        }
+        .header__red-cart {
+            display: none;
         }
     }
 }

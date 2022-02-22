@@ -8,40 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="css/iconsfont.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>Remote_Helpers_front-page</title>
+    <title>Remote_Helpers_page</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container container">
-            <div class="header__content">
-                <div class="header__body">
-                    <h1 class="header__title title">Get your work done with<br> our remote employees</h1>
-                    <p class="header__text text">
-                        Let our remote support push your business to its full<br> potential. Pick your candidate by the
-                        end of this week<br> and get a free consultation and 10% off.
-                    </p>
-                    <button type="button" class="header__consult-btn btn">Get free consultation</button>
-                    <button type="button" class="header__hire-btn btn">Hire a specialist</button>
-                    <div class="header__social social">
-                        <a href="#" class="social__item"><img src="img/social/viber.png" alt="ALT"></a>
-                        <a href="#" class="social__item"><img src="img/social/tel.png" alt="ALT"></a>
-                        <a href="#" class="social__item"><img src="img/social/skype.png" alt="ALT"></a>
-                    </div>
-
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__contacts flex">
+                <div class="header__social-desctop social">
+                    <a href="#" class="social__item icon-viber"></a>
+                    <a href="#" class="social__item icon-tel"></a>
+                    <a href="#" class="social__item icon-skype"></a>
                 </div>
-                <div class="header__info-block">
-                    <ul class="header__list list">
-                        <li class="header__list-item"><span>@</span><a href="#"
-                                class="header__link">sales<span>@</span>rh-s.com</a></li>
-                        <li class="header__list-item"><a href="#" class="header__link">+972
-                                50-901-4509</a></li>
-                    </ul>
+                <div class="header__contact-list">
+                    <a href="#" class="header__link"><span class="header__icn">@</span>sales<span>@</span>rh-s.com</a>
+                    <a href="#" class="header__link-desc"><span class="header__icn icon-tel"></span>+972 50-901-4509</a>
                 </div>
             </div>
-            <div class="header__cart">
-                <ul>
+            <h1 class="header__title title">Get your work done with<br> our remote employees</h1>
+            <p class="header__text text"><span>Let our remote support push your business to its full
+                    potential.</span>Pick your candidate by the end of this week and get a free consultation and
+                10% off.</p>
+            <div class="header__btn-box">
+                <a href="#" class="header__consult-btn btn">Get free consultation</a>
+                <a href="#" class="header__hire-btn btn">Find a specialist</a>
+            </div>
+            <div class="header__red-cart-desc">
+                <ul class="header__nav">
                     <li><a href="#">Design</a></li>
                     <li><a href="#">Development</a></li>
                     <li><a href="#">Marketing</a></li>
@@ -50,469 +45,467 @@
                     <li><a href="#">Virtual Assistance</a></li>
                     <li><a href="#">Video editing</a></li>
                 </ul>
-            </div>
-        </div>
-    </header>
-    <main class="page">
-        <section class="consult">
-            <div class="consult__container container">
-                <div class="consult__content">
-                    <h2 class="consult__title title">Reliable outsourcing:<br>Value. Trust. Responsibility.</h2>
-                    <div class="consult__body">
-                        <p class="consult__text text">
-                            We undertake the process to find the most appropriate<br> and skilled employees for our
-                            clients. Remote Helpers<br> already can present you with more than 150 candidates;<br> in 6
-                            different areas of IT and marketing. Our staff can work<br> in your time zone, full-time (8
-                            hours per day) or part-time<br> (4 hours per day) which significantly saves your time.<br>
-                            Entrust your tasks like 80+ companies already did.
-                        </p>
-                        <div class="consult__blk">
-                            <div class="consult__img-cover"><img src="img/consult-img.png" alt="ALT"></div>
-                            <div class="consult__clmn">
-                                <div class="consult__itm">
-                                    <h2 class="consult__ttle title">You can trust our company.</h2>
-                                    <p class="consult__txt text">Great isn`t good enough.
-                                        We are always searching for improvement, keeping with passion and enthusiasm.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="consult__consult-btn btn">Get free consultation</button>
-                    </div>
+                <div class="header__img-box">
+                    <div class="header__img-cover"><img src="img/img-1.png" alt="ALT"></div>
+                    <div class="header__img-cover"><img src="img/img-2.png" alt="ALT"></div>
+                    <div class="header__img-cover"><img src="img/img-3.png" alt="ALT"></div>
                 </div>
             </div>
-        </section>
-        <section class="solution">
-            <div class="solution__container container">
-                <div class="solution__content">
-                    <h2 class="solution__title title">What problems we will<br> solve for you</h2>
-                    <div class="solution__items">
-                        <div class="solution__column">
-                            <div class="solution__item">
-                                <div class="solution__img-icon"><img src="img/problem-list/1.png" alt="ALT"></div>
-                                <div class="solution__description">
-                                    <h3 class="solution__sub-title title">Time for searching</h3>
-                                    <p class="solution__text text">You don`t need to waste a lot of time selecting
-                                        huge amounts of potential candidates; we have already chosen the best fit for
-                                        your needs.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="solution__item">
-                                <div class="solution__img-icon"><img src="img/problem-list/2.png" alt="ALT"></div>
-                                <div class="solution__description">
-                                    <h3 class="solution__sub-title title">Training and experience</h3>
-                                    <p class="solution__text text">Worry because of lack of<br> experience? We train
-                                        our employees for at least 1-2 months under skilled team leads within the
-                                        company.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="solution__column">
-                            <div class="solution__item">
-                                <div class="solution__img-icon"><img src="img/problem-list/3.png" alt="ALT"></div>
-                                <div class="solution__description">
-                                    <h3 class="solution__sub-title title">Risk of turnovers</h3>
-                                    <p class="solution__text text">Recruitment, staff management,<br> and training
-                                        to prevent the risk of turnovers
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="solution__item">
-                                <div class="solution__img-icon"><img src="img/problem-list/4.png" alt="ALT"></div>
-                                <div class="solution__description">
-                                    <h3 class="solution__sub-title title">Avalanche of interviews</h3>
-                                    <p class="solution__text text">We know how exhausting it is to interview hundreds
-                                        of candidates and select matching your requirements in one interview.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="solution__column">
-                            <div class="solution__item">
-                                <div class="solution__img-icon"><img src="img/problem-list/5.png" alt="ALT"></div>
-                                <div class="solution__description">
-                                    <h3 class="solution__sub-title title">No personal cotracts</h3>
-                                    <p class="solution__text text">Cooperation with us will allow you not to waste
-                                        time dealing with the number of documents and problems of official employment of
-                                        employees.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="solution__item">
-                                <div class="solution__img-icon"><img src="img/problem-list/6.png" alt="ALT"></div>
-                                <div class="solution__description">
-                                    <h3 class="solution__sub-title title">Control employees</h3>
-                                    <p class="solution__text text">Hiring outsourcing workers, not freelancers,
-                                        prevents you from lacking accountability and control.
-                                    </p>
-                                </div>
+            <div class="header__red-cart">
+                <ul class="header__nav">
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Video editing</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Virtual Assistance</a></li>
+                </ul>
+                <div class="header__social social">
+                    <a href="#" class="social__item icon-viber"></a>
+                    <a href="#" class="social__item icon-tel"></a>
+                    <a href="#" class="social__item icon-skype"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="consult__content">
+                <h2 class="consult__title title">Reliable outsourcing:<br>Value. Trust. Responsibility.</h2>
+                <p class="consult__text text">
+                    We undertake the process to find the most appropriate and skilled employees for our
+                    clients. Remote Helpers already can present you with more than 150 candidates;
+                    in 6 different areas of IT and marketing. Our staff can work in your time zone, full-time
+                    (8 hours per day) or part-time (4 hours per day) which significantly saves your
+                    time. Entrust your tasks like 80+ companies already did.
+                </p>
+                <div class="consult__center-box">
+                    <div class="consult__img-cover">
+                        <img src="img/consult-img.png" alt="ALT">
+                        <div class="consult__column">
+                            <div class="consult__item">
+                                <p class="consult__txt text">Great isn`t good enough.
+                                    We are always searching for improvement, keeping with passion and
+                                    enthusiasm.
+                                </p>
+                                <h2 class="consult__ttle title">You can trust our<span> company.</span></h2>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="solution__consult-btn btn">Get free consultation</button>
+                    <a href="#" class="consult__consult-btn btn">Get free consultation</a>
                 </div>
-            </div>
-        </section>
-        <section class="departments">
-            <div class="departments__container container">
-                <div class="departments__content">
-                    <!-- Slider main container -->
-                    <div class="departments__slider swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="departments__wrapper swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="departments__slide swiper-slide">
-                                <h2 class="departments__title title">Creative group.</h2>
-                                <div class="departments__content-box">
-                                    <div class="departments__column">
-                                        <p class="departments__descr text">
-                                            Get a unique design solution to create visual elements<br> of a website with
-                                            the help of dedicated UI/UX,<br> graphic designers, video editors and
-                                            illustrators
-                                        </p>
-                                        <div class="departments__sub-text">
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-title sub-title">Candidates skills</h3>
-                                                <ul class="departments__list text">
-                                                    <li class="departments__link">After Effects</li>
-                                                    <li class="departments__link">ProCreate</li>
-                                                    <li class="departments__link">Figma</li>
-                                                    <li class="departments__link">Photoshop</li>
-                                                    <li class="departments__link">Illustrator</li>
-                                                    <li class="departments__link">Blender</li>
-                                                    <li class="departments__link">Premiere Pro</li>
-                                                    <li class="departments__link">Da Vinci Resolve</li>
-                                                </ul>
-                                            </div>
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-title sub-title">Work to be done</h3>
-                                                <ul class="departments__list text">
-                                                    <li class="departments__link">Web design</li>
-                                                    <li class="departments__link">Social media design</li>
-                                                    <li class="departments__link">Illustrations</li>
-                                                    <li class="departments__link">Retouching</li>
-                                                    <li class="departments__link">Video editing</li>
-                                                    <li class="departments__link">Animation</li>
-                                                    <li class="departments__link">Branding</li>
-                                                    <li class="departments__link">Game design</li>
-                                                </ul>
-                                            </div>
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-titles sub-title">Work schedule<br> and
-                                                    prices
-                                                </h3>
-                                                <div class="departments__sub-item">
-                                                    <div class="departments__text text">Full-time: 8 hours per day</div>
-                                                    <div class="consult__img-cover"><img src="img/slider/rate-1200.png"
-                                                            alt="ALT"></div>
-                                                </div>
-                                                <div class="departments__sub-item">
-                                                    <div class="departments__text text">Part-time: 4 hours per day</div>
-                                                    <div class="consult__img-cover"><img src="img/slider/rate-900.png"
-                                                            alt="ALT"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="departments__hire-btn btn">Hire a
-                                            specialist</button>
+            </section>
+            <section class="solution__content">
+                <h2 class="solution__title title">What problems we will<br> solve for you</h2>
+                <div class="solution__column flex">
+                    <div class="solution__item flex">
+                        <div class="solution__img-icon"><img src="img/problem-list/1.png" alt="ALT"></div>
+                        <div class="solution__description">
+                            <h3 class="solution__sub-title title">Time for searching</h3>
+                            <p class="solution__text text">You don`t need to waste a lot of time selecting
+                                huge amounts of potential candidates; we have already chosen the best fit for
+                                your needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item flex">
+                        <div class="solution__img-icon"><img src="img/problem-list/2.png" alt="ALT"></div>
+                        <div class="solution__description">
+                            <h3 class="solution__sub-title title">Training and experience</h3>
+                            <p class="solution__text text">Worry because of lack of experience? We train
+                                our employees for at least 1-2 months under skilled team leads within the
+                                company.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item flex">
+                        <div class="solution__img-icon"><img src="img/problem-list/3.png" alt="ALT"></div>
+                        <div class="solution__description">
+                            <h3 class="solution__sub-title title">Risk of turnovers</h3>
+                            <p class="solution__text text">Recruitment, staff management, and training
+                                to prevent the risk of turnovers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item flex">
+                        <div class="solution__img-icon"><img src="img/problem-list/4.png" alt="ALT"></div>
+                        <div class="solution__description">
+                            <h3 class="solution__sub-title title">Avalanche of interviews</h3>
+                            <p class="solution__text text">We know how exhausting it is to interview hundreds
+                                of candidates and select matching your requirements in one interview.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item flex">
+                        <div class="solution__img-icon"><img src="img/problem-list/5.png" alt="ALT"></div>
+                        <div class="solution__description">
+                            <h3 class="solution__sub-title title">No personal cotracts</h3>
+                            <p class="solution__text text">Cooperation with us will allow you not to waste
+                                time dealing with the number of documents and problems of official employment of
+                                employees.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="solution__item flex">
+                        <div class="solution__img-icon"><img src="img/problem-list/6.png" alt="ALT"></div>
+                        <div class="solution__description">
+                            <h3 class="solution__sub-title title">Control employees</h3>
+                            <p class="solution__text text">Hiring outsourcing workers, not freelancers,
+                                prevents you from lacking accountability and control.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="solution__consult-btn btn">Get free consultation</a>
+            </section>
+            <section class="departments__content">
+                <h2 class="departments__title title">Our departments</h2>
+                <div class="departments__slider swiper">
+                    <div class="departments__wrapper swiper-wrapper">
+                        <div class="departments__slide swiper-slide">
+                            <div class="departments__texting">
+                                <h2 class="departments__titles title">Creative group.</h2>
+                                <p class="departments__descr text">
+                                    Get a unique design solution to create visual elements of a website with
+                                    the help of dedicated UI/UX, graphic designers, video editors and
+                                    illustrators
+                                </p>
+                            </div>
+                            <div class="departments__sub-text">
+                                <div class="departments__img-box">
+                                    <div class="departments__img-cover"><img src="img/slider/slide-1.png" alt="ALT">
                                     </div>
-                                    <div class="departments__img-cover">
-                                        <img src="img/slider/slide-1.png" alt="ALT">
+                                </div>
+                                <div class="departments__itemo">
+                                    <h3 class="departments__sub-titles sub-title">Work schedule and prices
+                                    </h3>
+                                    <div class="departments__sub-item flex">
+                                        <div class="consult__img-cover">
+                                            <p class="consult__im-text">Full-time: <span>8 hours per
+                                                    day</span></p>
+                                            <img src="img/slider/rate-1200.png" alt="ALT">
+                                        </div>
+                                        <div class="consult__img-cover">
+                                            <p class="consult__im-text">Part-time: <span>4 hours per
+                                                    day</span></p>
+                                            <img src="img/slider/rate-900.png" alt="ALT">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="departments__item flex">
+                                    <div class="departments__listo">
+                                        <h3 class="departments__sub-title sub-title">Candidates skills</h3>
+                                        <ul class="departments__list text">
+                                            <li class="departments__link">After Effects</li>
+                                            <li class="departments__link">ProCreate</li>
+                                            <li class="departments__link">Figma</li>
+                                            <li class="departments__link">Photoshop</li>
+                                            <li class="departments__link">Illustrator</li>
+                                            <li class="departments__link">Blender</li>
+                                            <li class="departments__link">Premiere Pro</li>
+                                            <li class="departments__link">Da Vinci Resolve</li>
+                                        </ul>
+                                    </div>
+                                    <div class="departments__listo">
+                                        <h3 class="departments__sub-title sub-title">Work to be done</h3>
+                                        <ul class="departments__list text">
+                                            <li class="departments__link">Web design</li>
+                                            <li class="departments__link">Social media design</li>
+                                            <li class="departments__link">Illustrations</li>
+                                            <li class="departments__link">Retouching</li>
+                                            <li class="departments__link">Video editing</li>
+                                            <li class="departments__link">Animation</li>
+                                            <li class="departments__link">Branding</li>
+                                            <li class="departments__link">Game design</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="departments__slide swiper-slide">
-                                <h2 class="departments__title title">Developers</h2>
-                                <div class="departments__content-box">
-                                    <div class="departments__column">
-                                        <p class="departments__descr text">
-                                            The specialists of our company are engaged in the full support of the
-                                            software and website development life cycle: analysis, design, development,
-                                            testing, and implementation.
-                                        </p>
-                                        <div class="departments__sub-text">
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-title sub-title">Candidates skills</h3>
-                                                <ul class="departments__list text">
-                                                    <li class="departments__link">WordPress</li>
-                                                    <li class="departments__link">WooComerce</li>
-                                                    <li class="departments__link">LearnDash</li>
-                                                    <li class="departments__link">CSS/SCSS</li>
-                                                    <li class="departments__link">Shopify</li>
-                                                    <li class="departments__link">JQuerry</li>
-                                                    <li class="departments__link">JS</li>
-                                                </ul>
-                                            </div>
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-title sub-title">Work to be done</h3>
-                                                <ul class="departments__list text">
-                                                    <li class="departments__link">Front-End</li>
-                                                    <li class="departments__link">Back-End PHP</li>
-                                                    <li class="departments__link">WordPress</li>
-                                                    <li class="departments__link">Editing Websites</li>
-                                                </ul>
-                                            </div>
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-titles sub-title">Work schedule<br> and
-                                                    prices
-                                                </h3>
-                                                <div class="departments__sub-item">
-                                                    <div class="departments__text text">Full-time: 8 hours per day</div>
-                                                    <div class="consult__img-cover"><img src="img/slider/rate-1400.png"
-                                                            alt="ALT"></div>
-                                                </div>
-                                                <div class="departments__sub-item">
-                                                    <div class="departments__text text">Part-time: 4 hours per day</div>
-                                                    <div class="consult__img-cover"><img src="img/slider/rate-1100.png"
-                                                            alt="ALT"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="departments__hire-btn btn">Hire a
-                                            specialist</button>
-                                    </div>
+                            <div class="departments__btn">
+                                <a href="#" class="departments__hire-btn btn">Hire a
+                                    specialist</a>
+                            </div>
+                        </div>
+                        <div class="departments__slide swiper-slide">
+                            <div class="departments__texting">
+                                <h2 class="departments__titles title">Developers</h2>
+                                <p class="departments__descr text">
+                                    The specialists of our company are engaged in the fullsupport of the
+                                    software and website development life cycle: analysis, design, development,
+                                    testing, and implementation.
+                                </p>
+                            </div>
+                            <div class="departments__sub-text">
+                                <div class="departments__img-box">
                                     <div class="departments__img-cover"><img src="img/slider/slide-2.png" alt="ALT">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="departments__slide swiper-slide">
-                                <h2 class="departments__title title">Marketing</h2>
-                                <div class="departments__content-box">
-                                    <div class="departments__column">
-                                        <p class="departments__descr text">
-                                            Our candidates are ready to maximize profits for your company. They build
-                                            and develop strategies to promote<br> your brands, products, and services.
-                                        </p>
-                                        <div class="departments__sub-text">
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-title sub-title">Candidates skills</h3>
-                                                <ul class="departments__list text">
-                                                    <li class="departments__link">Google ads</li>
-                                                    <li class="departments__link">Facebook ads</li>
-                                                    <li class="departments__link">CRM</li>
-                                                    <li class="departments__link">MS Office</li>
-                                                    <li class="departments__link">1C</li>
-                                                    <li class="departments__link">Quickbooks</li>
-                                                </ul>
-                                            </div>
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-title sub-title">Work to be done</h3>
-                                                <ul class="departments__list text">
-                                                    <li class="departments__link">Setting up the ads campaign</li>
-                                                    <li class="departments__link">Creating copy</li>
-                                                    <li class="departments__link">Developing content plan</li>
-                                                    <li class="departments__link">Running social media accounts</li>
-                                                    <li class="departments__link">Ensuring target ranking positions</li>
-                                                </ul>
-                                            </div>
-                                            <div class="departments__item">
-                                                <h3 class="departments__sub-titles sub-title">Work schedule<br> and
-                                                    prices
-                                                </h3>
-                                                <div class="departments__sub-item">
-                                                    <div class="departments__text text">Full-time: 8 hours per day</div>
-                                                    <div class="consult__img-cover"><img src="img/slider/rate-1000.png"
-                                                            alt="ALT"></div>
-                                                </div>
-                                                <div class="departments__sub-item">
-                                                    <div class="departments__text text">Part-time: 4 hours per day</div>
-                                                    <div class="consult__img-cover"><img src="img/slider/rate-700.png"
-                                                            alt="ALT"></div>
-                                                </div>
-                                            </div>
+                                <div class="departments__itemo">
+                                    <h3 class="departments__sub-titles sub-title">Work schedule and prices
+                                    </h3>
+                                    <div class="departments__sub-item flex">
+                                        <div class="consult__img-cover">
+                                            <p class="consult__im-text">Full-time: <span>8 hours per
+                                                    day</span></p>
+                                            <img src="img/slider/rate-1400.png" alt="ALT">
                                         </div>
-                                        <button type="button" class="departments__hire-btn btn">Hire a
-                                            specialist</button>
+                                        <div class="consult__img-cover">
+                                            <p class="consult__im-text">Part-time: <span>4 hours per
+                                                    day</span></p>
+                                            <img src="img/slider/rate-1100.png" alt="ALT">
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="departments__item flex">
+                                    <div class="departments__listo">
+                                        <h3 class="departments__sub-title sub-title">Candidates skills</h3>
+                                        <ul class="departments__list text">
+                                            <li class="departments__link">WordPress</li>
+                                            <li class="departments__link">WooComerce</li>
+                                            <li class="departments__link">LearnDash</li>
+                                            <li class="departments__link">CSS/SCSS</li>
+                                            <li class="departments__link">Shopify</li>
+                                            <li class="departments__link">JQuerry</li>
+                                            <li class="departments__link">JS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="departments__listo">
+                                        <h3 class="departments__sub-title sub-title">Work to be done</h3>
+                                        <ul class="departments__list text">
+                                            <li class="departments__link">Front-End</li>
+                                            <li class="departments__link">Back-End PHP</li>
+                                            <li class="departments__link">WordPress</li>
+                                            <li class="departments__link">Editing Websites</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="departments__btn">
+                                <a href="#" class="departments__hire-btn btn">Hire a
+                                    specialist</a>
+                            </div>
+                        </div>
+                        <div class="departments__slide swiper-slide">
+                            <div class="departments__texting">
+                                <h2 class="departments__titles title">Marketing</h2>
+                                <p class="departments__descr text">
+                                    Our candidates are ready to maximize profits for your company. They build
+                                    and develop strategies to promote your brands, products, and services.
+                                </p>
+                            </div>
+                            <div class="departments__sub-text">
+                                <div class="departments__img-box">
                                     <div class="departments__img-cover"><img src="img/slider/slide-3.png" alt="ALT">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section class="employees">
-            <div class="employees__container container">
-                <div class="employees__content">
-                    <h2 class="employees__title title">Check 4 easy steps to get <br> the employee</h2>
-                    <div class="employees__body">
-                        <div class="employees__blocker">
-                            <div class="employees__item">
-                                <h3 class="employees__sub-title sub-title">Selection of candidates</h3>
-                                <p class="employees__text text">We offer you several candidates according to your
-                                    requirements to create a real team<br> to improve your project</p>
-                            </div>
-                            <div class="employees__item">
-                                <h3 class="employees__sub-title sub-title">Interview</h3>
-                                <p class="employees__text text">Our company schedules interviews<br> with the chosen
-                                    employees</p>
-                            </div>
-                            <div class="employees__item">
-                                <h3 class="employees__sub-title sub-title">Agreement</h3>
-                                <p class="employees__text text">Сollaboration means that we sign a contract with you.
-                                    Beforehand, we agree on all the details: terms, payment, and tasks</p>
-                            </div>
-                            <div class="employees__item">
-                                <h3 class="employees__sub-title sub-title">Mutual cooperation</h3>
-                                <p class="employees__text text">After signing the contract, candidates will<br> be
-                                    ready to start working on your project</p>
-                            </div>
-                            <button type="button" class="employees__hire-btn btn">Make first step</button>
-                        </div>
-                        <div class="employees__img-cover">
-                            <div class="employees__numb">
-                                <div class="employees__itm"><img src="img/empl/1-m.png" alt=""></div>
-                                <div class="employees__itm"><img src="img/empl/2-m.png" alt=""></div>
-                                <div class="employees__itm"><img src="img/empl/3-m.png" alt=""></div>
-                                <div class="employees__itm"><img src="img/empl/4-m.png" alt=""></div>
-                            </div>
-                            <div class="employees__right-pic"><img src="img/empl-img.png" alt="ALT"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clients">
-            <div class="clients__container container">
-                <div class="clients__content">
-                    <h2 class="clients__title title">Our clients and what they<br> say about us</h2>
-                    <div class="clients__items">
-                        <div class="clients__logos-column">
-                            <ul class="clients__list">
-                                <li><a><img src="img/logos/lg-1.png" alt="ALT"></a></li>
-                                <li><a><img src="img/logos/lg-2.png" alt="ALT"></a></li>
-                                <li><a><img src="img/logos/lg-3.png" alt="ALT"></a></li>
-                            </ul>
-                            <ul class="clients__list">
-                                <li><a><img src="img/logos/lg-4.png" alt="ALT"></a></li>
-                                <li><a><img src="img/logos/lg-5.png" alt="ALT"></a></li>
-                                <li><a><img src="img/logos/lg-6.png" alt="ALT"></a></li>
-                                <li><a><img src="img/logos/lg-7.png" alt="ALT"></a></li>
-                            </ul>
-
-                        </div>
-                        <div class="clients__column">
-                            <div class="clients__item">
-                                <div class="clients__description">
-                                    <div class="clients__img-icon"><img src="img/problem-list/1.png" alt="ALT"></div>
-                                    <div class="clients__descr">
-                                        <h3 class="clients__sub-title sub-title">Anders Willumsen</h3>
-                                        <p class="clients__position text">CEO at Eurekos<br> Systems ApS</p>
+                                <div class="departments__itemo">
+                                    <h3 class="departments__sub-titles sub-title">Work schedule and prices
+                                    </h3>
+                                    <div class="departments__sub-item flex">
+                                        <div class="consult__img-cover">
+                                            <p class="consult__im-text">Full-time: <span>8 hours per
+                                                    day</span></p>
+                                            <img src="img/slider/rate-1000.png" alt="ALT">
+                                        </div>
+                                        <div class="consult__img-cover">
+                                            <p class="consult__im-text">Part-time: <span>4 hours per
+                                                    day</span></p>
+                                            <img src="img/slider/rate-700.png" alt="ALT">
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="clients__text text">“We urgently needed an English-speaking content
-                                    creator for customer projects and demos. We were given four great matches very
-                                    quickly and<br> the opportunity to interview them all online. Based on that, we were
-                                    soon through to the final selection phase<br> and implementation.”
-                                </p>
-                            </div>
-                            <div class="clients__item">
-                                <div class="clients__description">
-                                    <div class="clients__img-icon"><img src="img/problem-list/2.png" alt="ALT"></div>
-                                    <div class="clients__descr">
-                                        <h3 class="clients__sub-title sub-title">Paul O`Riordan</h3>
-                                        <p class="clients__position text">client</p>
+                                <div class="departments__item flex">
+                                    <div class="departments__listo">
+                                        <h3 class="departments__sub-title sub-title">Candidates skills</h3>
+                                        <ul class="departments__list text">
+                                            <li class="departments__link">Google ads</li>
+                                            <li class="departments__link">Facebook ads</li>
+                                            <li class="departments__link">CRM</li>
+                                            <li class="departments__link">MS Office</li>
+                                            <li class="departments__link">1C</li>
+                                            <li class="departments__link">Quickbooks</li>
+                                        </ul>
+                                    </div>
+                                    <div class="departments__listo">
+                                        <h3 class="departments__sub-title sub-title">Work to be done</h3>
+                                        <ul class="departments__list text">
+                                            <li class="departments__link">Setting up the ads campaign</li>
+                                            <li class="departments__link">Creating copy</li>
+                                            <li class="departments__link">Developing content plan</li>
+                                            <li class="departments__link">Running social media accounts</li>
+                                            <li class="departments__link">Ensuring target ranking positions</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <p class="clients__text text">“The people I have dealt with to<br> date have been
-                                    highly professional, and the lady who worked with me<br> on our revamp of our
-                                    website did everything I had asked of her with diligence and speed. Thank you,<br>
+                            </div>
+                            <div class="departments__btn">
+                                <a href="#" class="departments__hire-btn btn">Hire a
+                                    specialist</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="departments__prev swiper-button-prev"></div>
+                    <div class="departments__next swiper-button-next"></div>
+                </div>
+            </section>
+            <section class="employees__content">
+                <h2 class="employees__title title">Check 4 easy steps to get <br> the employee</h2>
+                <div class="employees__body flex">
+                    <div class="employees__blocker">
+                        <div class="employees__item">
+                            <h3 class="employees__sub-title sub-title">Selection of candidates</h3>
+                            <p class="employees__text text">We offer you several candidates according to your
+                                requirements to create a real team to improve your project</p>
+                        </div>
+                        <div class="employees__item">
+                            <h3 class="employees__sub-title sub-title">Interview</h3>
+                            <p class="employees__text text">Our company schedules interviews with the chosen
+                                employees</p>
+                        </div>
+                        <div class="employees__item">
+                            <h3 class="employees__sub-title sub-title">Agreement</h3>
+                            <p class="employees__text text">Сollaboration means that we sign a contract with you.
+                                Beforehand, we agree on all the details: terms, payment, and tasks</p>
+                        </div>
+                        <div class="employees__item">
+                            <h3 class="employees__sub-title sub-title">Mutual cooperation</h3>
+                            <p class="employees__text text">After signing the contract, candidates will be
+                                ready to start working on your project</p>
+                        </div>
+                        <a href="#" class="employees__hire-btn btn">Make first step</a>
+                    </div>
+                    <div class="employees__img-cover">
+                        <div class="employees__numb">
+                            <div class="employees__itm"><img src="img/empl/1-m.png" alt=""></div>
+                            <div class="employees__itm"><img src="img/empl/2-m.png" alt=""></div>
+                            <div class="employees__itm"><img src="img/empl/3-m.png" alt=""></div>
+                            <div class="employees__itm"><img src="img/empl/4-m.png" alt=""></div>
+                        </div>
+                        <div class="employees__right-pic"><img src="img/empl-img.png" alt="ALT"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients__content">
+                <h2 class="clients__title title">Our clients and what they say about us</h2>
+                <div class="clients__swiper slider">
+                    <div class="swiper-wrapper">
+                        <div class="clients__slide swiper-slide"><img src="img/logos/lg-1.png" alt="ALT"></div>
+                        <div class="clients__slide swiper-slide"><img src="img/logos/lg-2.png" alt="ALT"></div>
+                        <div class="clients__slide swiper-slide"><img src="img/logos/lg-3.png" alt="ALT"></div>
+                        <div class="clients__slide swiper-slide"><img src="img/logos/lg-4.png" alt="ALT"></div>
+                        <div class="clients__slide swiper-slide"><img src="img/logos/lg-5.png" alt="ALT"></div>
+                        <div class="clients__slide swiper-slide"><img src="img/logos/lg-6.png" alt="ALT"></div>
+                    </div>
+                </div>
+                <div class="clients__logos-column">
+                    <ul class="clients__list">
+                        <li><a><img src="img/logos/lg-1.png" alt="ALT"></a></li>
+                        <li><a><img src="img/logos/lg-2.png" alt="ALT"></a></li>
+                        <li><a><img src="img/logos/lg-3.png" alt="ALT"></a></li>
+                    </ul>
+                    <ul class="clients__list">
+                        <li><a><img src="img/logos/lg-4.png" alt="ALT"></a></li>
+                        <li><a><img src="img/logos/lg-5.png" alt="ALT"></a></li>
+                        <li><a><img src="img/logos/lg-6.png" alt="ALT"></a></li>
+                        <li><a><img src="img/logos/lg-7.png" alt="ALT"></a></li>
+                    </ul>
+                </div>
+                <div class="clients__column flex">
+                    <div class="clients__item flex">
+                        <div class="clients__img-icon"><img src="img/problem-list/1.png" alt="ALT"></div>
+                        <div class="clients__description">
+                            <h3 class="clients__sub-title sub-title">Anders Willumsen</h3>
+                            <p class="clients__position text">CEO at Eurekos Systems ApS</p>
+                            <p class="clients__text text">“We urgently needed an English-speaking content
+                                creator for customer<span id="dots"></span><span id="more"> projects and demos. We
+                                    were given four great matches very quickly and the opportunity to interview them all
+                                    online. Based on that, we were soon through to the final selection phase and
+                                    implementation.”</span>
+                            </p> <a href="#" id="click" onclick="readMore()">Read more</a>
+                        </div>
+                    </div>
+                    <div class="clients__item flex">
+                        <div class="clients__img-icon"><img src="img/problem-list/2.png" alt="ALT"></div>
+                        <div class="clients__description">
+                            <h3 class="clients__sub-title sub-title">Paul O`Riordan</h3>
+                            <p class="clients__position text">client</p>
+                            <p class="clients__text text">“The people I have dealt with to date have been
+                                highly professional, and the lady who <span id="dots"></span><span id="more">
+                                    worked with me on our revamp of our website did everything I had asked of her with
+                                    diligence and speed. Thank you,
                                     Super
                                     Job.”
-                                </p>
+                                </span>
+                            </p> <a href="#" id="click" onclick="readMore()">Read more</a>
+                        </div>
+                    </div>
+                    <div class="clients__item flex">
+                        <div class="clients__img-icon"><img src="img/problem-list/3.png" alt="ALT"></div>
+                        <div class="clients__description">
+                            <h3 class="clients__sub-title sub-title">Andy Kulosa</h3>
+                            <p class="clients__position text">CEO at Terranova Werbung</p>
+                            <p class="clients__text text">“The objective behind our collaboration was Graphik
+                                and Design for the creation of <span id="dots"></span><span id="more">
+                                    HTML5 Banner Sets. The fast reaction on our demands and the constructive an creative
+                                    way the employee w.”</span>
+                            </p> <a href="#" id="click" onclick="readMore()">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts__content">
+                <h2 class="contacts__title title">Leave your contacts to get free consultation</h2>
+                <p class="contacts__text text">Get in touch with us to discuss all the questions. You can
+                    leave your message in the form below and we'll reply by e-mail. Or we can call
+                    you in the time you chose.
+                </p>
+                <div class="contacts__body">
+                    <div class="contacts__left-pic">
+                        <div class="contacts__inner-pic"><img src="img/contact-img-red.png" alt="ALT"></div>
+                    </div>
+                    <div class="contacts__form-box">
+                        <form action="#" id="form" class="contacts__form">
+                            <div class="contacts__form-field">
+                                <label class="contacts__label" for="formName">Name*</label>
+                                <input id="formName" type="text" name="name" class="contacts__input"
+                                    placeholder="Harold Lewis" />
                             </div>
-                            <div class="clients__item">
-                                <div class="clients__description">
-                                    <div class="clients__img-icon"><img src="img/problem-list/3.png" alt="ALT"></div>
-                                    <div class="clients__descr">
-                                        <h3 class="clients__sub-title sub-title">Andy Kulosa</h3>
-                                        <p class="clients__position text">CEO at Terranova<br> Werbung</p>
-                                    </div>
-                                </div>
-                                <p class="clients__text text">“The objective behind our<br> collaboration was Graphik
-                                    and<br> Design for the creation of HTML5 Banner Sets. The fast reaction on<br> our
-                                    demands and the constructive<br> an creative way the employee w.”
-                                </p>
+                            <div class="contacts__form-field">
+                                <label class="contacts__label" for="formEmail">E-mail*</label>
+                                <input id="formEmail" type="email" name="email" class="contacts__input"
+                                    placeholder="haroldlewis@mail.com" />
                             </div>
-                        </div>
+                            <div class="contacts__form-field">
+                                <label class="contacts__label" for="formTel">Phone number*</label>
+                                <input id="formTel" type="text" name="contacts" class="contacts__input"
+                                    placeholder="+19779269925809" />
+                            </div>
+                            <div class="contacts__form-field">
+                                <label class="contacts__label" for="formCall">Better time for call*</label>
+                                <input id="formCall" type="text" name="contacts" class="contacts__input"
+                                    placeholder="2 p.m.- 5 p.m." />
+                            </div>
+                            <div class="contacts__form-field">
+                                <input type="submit" class="contacts__form-btn btn" value="Submit" />
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="contacts">
-            <div class="contacts__container container">
-                <div class="contacts__content">
-                    <h2 class="contacts__title title">Leave your contacts to get<br> free consultation</h2>
-                    <div class="contacts__body">
-                        <div class="contacts__img-cover">
-                            <p class="contacts__text text">Get in touch with us to discuss all the questions. You can
-                                leave your<br> message in the form below and we'll<br> reply by e-mail. Or we can call
-                                you in<br> the time you chose.
-                            </p>
-                            <div class="contacts__left-pic"><img src="img/contact-img-red.png" alt="ALT"></div>
-                        </div>
-                        <div class="contacts__form">
-                            <form action="#" id="form" class="contacts__form-fields">
-                                <div class="contacts__form-field">
-                                    <label class="contacts__label" for="formName">Name*</label>
-                                    <input id="formName" type="text" name="name" class="contacts__input"
-                                        placeholder="Harold Lewis" />
-                                </div>
-                                <div class="contacts__form-field">
-                                    <label class="contacts__label" for="formTel">Phone number*</label>
-                                    <input id="formTel" type="text" name="contacts" class="contacts__input"
-                                        placeholder="+19779269925809" />
-                                </div>
-                                <div class="contacts__form-field">
-                                    <label class="contacts__label" for="formEmail">E-mail*</label>
-                                    <input id="formEmail" type="email" name="email" class="contacts__input"
-                                        placeholder="haroldlewis@mail.com" />
-                                </div>
-                                <div class="contacts__form-field">
-                                    <label class="contacts__label" for="formCall">Better time for call*</label>
-                                    <input id="formCall" type="text" name="contacts" class="contacts__input"
-                                        placeholder="2 p.m.- 5 p.m." />
-                                </div>
-
-                                <button type="submit" class="contacts__form-btn btn">Submit</button>
-                            </form>
-                        </div>
-
-                    </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="details__container">
+                <div class="details__item text">Remote Helpers 2022 © All rights reserved
+                    Privacy Policy</div>
+                <div class="details__img-cover"><img src="img/footer-logo.png" alt="ALT"></div>
+                <div class="details__social social">
+                    <a href="#" class="social__item icon-viber"></a>
+                    <a href="#" class="social__item icon-tel"></a>
+                    <a href="#" class="social__item icon-skype"></a>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="details">
-            <div class="details__container container">
-                <div class="details__content">
-                    <div class="details__column">
-                        <div class="details__item text">Remote Helpers 2022 © All rights reserved
-                            Privacy Policy</div>
-                    </div>
-                    <div class="details__img-cover"><img src="img/footer-logo.png" alt="ALT"></div>
-                    <div class="details__social social">
-                        <a href="#" class="social__item"><img src="img/social/viber-red.png" alt="ALT"></a>
-                        <a href="#" class="social__item"><img src="img/social/tel-red.png" alt="ALT"></a>
-                        <a href="#" class="social__item"><img src="img/social/skype-red.png" alt="ALT"></a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
+    </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
